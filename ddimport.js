@@ -486,7 +486,11 @@ class DDImporter extends Application
     }
     let newScene = new Scene({
       name: sceneName,
+      fogExploration: false,
+      globalLight: true,
       grid: pixelsPerGrid,
+      gridType: 0,
+      fogExploration: false,
       img: imagePath,
       width: pixelsPerGrid * file.resolution.map_size.x,
       height: pixelsPerGrid * file.resolution.map_size.y,
